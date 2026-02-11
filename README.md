@@ -1,6 +1,7 @@
 # RLM-MEM 🧠
 
-**RLM-MEM** is an [RLM](https://arxiv.org/html/2501.11223v1)-inspired memory operating layer for coding agents. The idea is simple, Agents use tools to sarfch memory instead of reading entire files.,  allowing a much larger context of memory available to the agent that remains consistent.
+**RLM-MEM** is an [RLM](https://arxiv.org/html/2501.11223v1)-inspired memory operating layer for coding agents.
+Instead of forcing an agent to load entire history, it retrieves the right memory slices at the right time.
 
 Inspired by the Recursive Language Model direction, this package turns that idea into practical local agent infrastructure: scoped memory, policy controls, and reliable retrieval workflows.
 
@@ -56,10 +57,10 @@ cd rlm-mem
 Quick setup checks from repo root:
 
 ```powershell
-$env:PYTHONPATH=(Resolve-Path RLM-MEM).Path
+$env:PYTHONPATH=(Get-Location).Path
 python -c "from brain.scripts import LayeredMemoryStore, LayeredChunkStoreAdapter, MemoryPolicy; print('OK')"
-python RLM-MEM/scripts/check_no_runtime_duplicates.py
-python RLM-MEM/scripts/check_skill_only_integrity.py
+python scripts/check_no_runtime_duplicates.py
+python scripts/check_skill_only_integrity.py
 ```
 
 If these pass, RLM-MEM is ready to use.
@@ -73,7 +74,9 @@ python -m pip install tiktoken pyyaml
 ## One-Liner For Another Agent 🚀
 
 ```text
+
 Install and set up RLM-MEM from https://github.com/zenchantlive/rlm-mem.git. Use only `RLM-MEM/` as source of truth, read `RLM-MEM/SKILL.md`, run import + guard checks, patch only `RLM-MEM/**`, and run troubleshooting tests only if behavior breaks.
+
 ```
 
 ## Soul + User Personalization
@@ -91,10 +94,10 @@ You can switch souls any time; this does not require runtime refactors.
 Manage these with built-in scripts:
 
 ```powershell
-python RLM-MEM/scripts/manage_soul.py list
-python RLM-MEM/scripts/manage_soul.py switch linus
-python RLM-MEM/scripts/manage_soul.py update linus --file .\my_soul.md
-python RLM-MEM/scripts/manage_user.py --file .\my_user_prefs.md
+python scripts/manage_soul.py list
+python scripts/manage_soul.py switch linus
+python scripts/manage_soul.py update linus --file .\my_soul.md
+python scripts/manage_user.py --file .\my_user_prefs.md
 ```
 
 Why this is useful:
@@ -107,7 +110,7 @@ Why this is useful:
 
 Whenever `manage_soul.py update` or `manage_user.py` writes changes, RLM-MEM creates timestamped backups in:
 
-- `RLM-MEM/user_backups/`
+- `user_backups/`
 
 Backup filename pattern examples:
 
@@ -148,18 +151,18 @@ Compatibility note:
 
 ## Canonical Layout
 
-- `RLM-MEM/SKILL.md` -> agent operator manual
-- `RLM-MEM/FRESH_AGENT_CHECKLIST.md` -> deep validation runbook
-- `RLM-MEM/brain/scripts/` -> runtime code + tests
-- `RLM-MEM/scripts/` -> guard/setup/management scripts
-- `RLM-MEM/brain/` -> compatibility assets and related docs
+- `SKILL.md` -> agent operator manual
+- `FRESH_AGENT_CHECKLIST.md` -> deep validation runbook
+- `brain/scripts/` -> runtime code + tests
+- `scripts/` -> guard/setup/management scripts
+- `brain/` -> compatibility assets and related docs
 
 ## Troubleshooting (Only When Needed)
 
 If setup passes but behavior is wrong, run:
 
 ```powershell
-$env:PYTHONPATH=(Resolve-Path RLM-MEM).Path
+$env:PYTHONPATH=(Get-Location).Path
 python -m unittest brain.scripts.test_memory_schema brain.scripts.test_memory_policy brain.scripts.test_memory_layers brain.scripts.test_memory_safety brain.scripts.test_layered_writer -v
 python -m unittest brain.scripts.test_remember_layered_integration brain.scripts.test_recall_layered_integration brain.scripts.test_reason_layered_integration brain.scripts.test_multi_agent_isolation -v
 python -m unittest brain.scripts.test_final_integration -v
@@ -167,7 +170,7 @@ python -m unittest brain.scripts.test_final_integration -v
 
 Common causes:
 
-- `ImportError: brain.scripts` -> `PYTHONPATH` not set to `RLM-MEM`
+- `ImportError: brain.scripts` -> `PYTHONPATH` not set to repo root
 - duplicate runtime guard failure -> conflicting runtime file names outside canonical path
 - integrity guard failure -> legacy authoritative paths were reintroduced
 
