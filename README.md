@@ -50,8 +50,7 @@ Dependency reality:
 Clone and initialize:
 
 ```powershell
-git clone https://github.com/zenchantlive/rlm-mem.git
-cd rlm-mem
+npx skills add zenchantlive/rlm-mem
 ```
 
 Quick setup checks from repo root:
