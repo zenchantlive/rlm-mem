@@ -74,7 +74,9 @@ python -m pip install tiktoken pyyaml
 ## One-Liner For Another Agent 🚀
 
 ```text
-Install and set up RLM-MEM from https://github.com/zenchantlive/rlm-mem.git. Use this repo root as source of truth, read `SKILL.md`, run import + guard checks, patch only files in this repo, and run troubleshooting tests only if behavior breaks.
+
+Install and set up RLM-MEM from https://github.com/zenchantlive/rlm-mem.git. Use only `RLM-MEM/` as source of truth, read `RLM-MEM/SKILL.md`, run import + guard checks, patch only `RLM-MEM/**`, and run troubleshooting tests only if behavior breaks.
+
 ```
 
 ## Soul + User Personalization
@@ -180,4 +182,4 @@ This keeps the distribution stable for fresh agents and avoids silent memory reg
 ## References
 
 - RLM paper: `https://arxiv.org/html/2501.11223v1`
-- Operator guide: `SKILL.md`
+- Skill guide: `RLM-MEM/SKILL.md`
