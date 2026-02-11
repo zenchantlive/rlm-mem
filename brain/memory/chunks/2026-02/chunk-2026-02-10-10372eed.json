@@ -1,0 +1,31 @@
+{
+  "id": "chunk-2026-02-10-10372eed",
+  "content": "Session started at 2026-02-10T14:10:16.810132. Context: Working on MERIDIAN Brain Enhanced documentation",
+  "tokens": 30,
+  "type": "note",
+  "metadata": {
+    "created": "2026-02-10T22:10:16.825180Z",
+    "conversation_id": "demo-auto-memory",
+    "source": "interaction",
+    "confidence": 1.0,
+    "access_count": 5,
+    "last_accessed": "2026-02-10T22:10:16.982072Z"
+  },
+  "links": {
+    "context_of": [
+      "chunk-2026-02-10-e79fe96d",
+      "chunk-2026-02-10-0cb78662",
+      "chunk-2026-02-10-dcb947f2",
+      "chunk-2026-02-10-9cc388ea",
+      "chunk-2026-02-10-f42a31d3"
+    ],
+    "follows": [],
+    "related_to": [],
+    "supports": [],
+    "contradicts": []
+  },
+  "tags": [
+    "session",
+    "start"
+  ]
+}

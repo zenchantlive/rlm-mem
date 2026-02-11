@@ -1,0 +1,44 @@
+{
+  "id": "chunk-2026-02-11-bb71b183",
+  "content": "User preference: User wants direct multi-agent execution with beads and explicit status updates\nContext: Conversation repeatedly emphasized parallel agents, beads detail, and active-state updates",
+  "tokens": 31,
+  "type": "preference",
+  "metadata": {
+    "created": "2026-02-11T03:46:54.868632Z",
+    "conversation_id": "session-2026-02-11-multi-agent-memory",
+    "source": "interaction",
+    "confidence": 0.95,
+    "access_count": 2,
+    "last_accessed": "2026-02-11T03:46:55.245709Z"
+  },
+  "links": {
+    "context_of": [
+      "chunk-2026-02-11-31c736c3",
+      "chunk-2026-02-11-45d60586",
+      "chunk-2026-02-11-4c2e4e24",
+      "chunk-2026-02-11-daa6dce1",
+      "chunk-2026-02-11-28f9a142",
+      "chunk-2026-02-11-4fdbb770",
+      "chunk-2026-02-11-ebbec345",
+      "chunk-2026-02-11-95cb58e3"
+    ],
+    "follows": [
+      "chunk-2026-02-11-31c736c3",
+      "chunk-2026-02-11-45d60586",
+      "chunk-2026-02-11-4c2e4e24",
+      "chunk-2026-02-11-daa6dce1",
+      "chunk-2026-02-11-28f9a142",
+      "chunk-2026-02-11-4fdbb770"
+    ],
+    "related_to": [
+      "chunk-2026-02-10-51ad258d",
+      "chunk-2026-02-11-964fdba8"
+    ],
+    "supports": [],
+    "contradicts": []
+  },
+  "tags": [
+    "preference",
+    "user"
+  ]
+}

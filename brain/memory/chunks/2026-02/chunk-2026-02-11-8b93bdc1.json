@@ -1,0 +1,38 @@
+{
+  "id": "chunk-2026-02-11-8b93bdc1",
+  "content": "Session started at 2026-02-10T18:09:01.155818. Context: Implementing user dashboard",
+  "tokens": 26,
+  "type": "note",
+  "metadata": {
+    "created": "2026-02-11T02:09:01.180897Z",
+    "conversation_id": "demo-session-001",
+    "source": "interaction",
+    "confidence": 1.0,
+    "access_count": 8,
+    "last_accessed": "2026-02-11T03:46:55.321236Z"
+  },
+  "links": {
+    "context_of": [
+      "chunk-2026-02-10-4f924a48",
+      "chunk-2026-02-10-31f08775",
+      "chunk-2026-02-10-51ad258d",
+      "chunk-2026-02-10-b9f6a5ea",
+      "chunk-2026-02-10-d3e8d0f4",
+      "chunk-2026-02-11-a11c8894",
+      "chunk-2026-02-11-964fdba8",
+      "chunk-2026-02-11-2ba78579",
+      "chunk-2026-02-11-0ed94762"
+    ],
+    "follows": [],
+    "related_to": [
+      "chunk-2026-02-11-31c736c3",
+      "chunk-2026-02-11-95cb58e3"
+    ],
+    "supports": [],
+    "contradicts": []
+  },
+  "tags": [
+    "session",
+    "start"
+  ]
+}

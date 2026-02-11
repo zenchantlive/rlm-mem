@@ -1,0 +1,38 @@
+{
+  "id": "chunk-2026-02-11-4c2e4e24",
+  "content": "Task meridian-c07.2.1 completed.\nWhat was done: Implemented append-only layered JSONL writer with lock-file serialization and fsync writes.\nOutcome: success\nFiles modified: brain/scripts/layered_memory_store.py, brain/scripts/test_layered_writer.py",
+  "tokens": 54,
+  "type": "note",
+  "metadata": {
+    "created": "2026-02-11T03:46:54.548507Z",
+    "conversation_id": "session-2026-02-11-multi-agent-memory",
+    "source": "interaction",
+    "confidence": 0.95,
+    "access_count": 6,
+    "last_accessed": "2026-02-11T03:46:55.180163Z"
+  },
+  "links": {
+    "context_of": [
+      "chunk-2026-02-11-31c736c3",
+      "chunk-2026-02-11-45d60586",
+      "chunk-2026-02-11-daa6dce1",
+      "chunk-2026-02-11-28f9a142",
+      "chunk-2026-02-11-4fdbb770",
+      "chunk-2026-02-11-bb71b183",
+      "chunk-2026-02-11-ebbec345",
+      "chunk-2026-02-11-95cb58e3"
+    ],
+    "follows": [
+      "chunk-2026-02-11-31c736c3",
+      "chunk-2026-02-11-45d60586"
+    ],
+    "related_to": [],
+    "supports": [],
+    "contradicts": []
+  },
+  "tags": [
+    "task",
+    "completion",
+    "meridian-c07.2.1"
+  ]
+}
